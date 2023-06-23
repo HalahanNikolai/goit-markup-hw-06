@@ -52,6 +52,9 @@ h6 {
   margin-bottom: 0;
 }
 
+li {
+}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -96,10 +99,9 @@ img {
   align-items: center;
 }
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
-  padding-left: 15px;
+  padding: 0 16px;
   /* display: flex; */
   /* outline: 1px dashed red; */
 }
@@ -112,7 +114,6 @@ img {
 .logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  /* font-style: normal; */
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -289,8 +290,10 @@ img {
   margin-bottom: 8px;
   background: #f4f4fd;
   border-radius: 4px;
-  width: 264px;
+  /* width: 264px; */
+  max-width: 356px;
   height: 112px;
+  display: none;
 }
 .svg-sect-two-two {
   margin: 24px 100px;
@@ -624,7 +627,8 @@ img {
 .about-us-list {
   list-style: none;
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
   padding: 0;
   /* width: calc((100% - 24px * 3) / 4); */
 }
@@ -652,10 +656,15 @@ img {
 }
 /*  ************************ sect 2  ************************ */
 .about-us {
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 20px 0;
 }
 .about-item {
   width: calc((100% - 72px) / 4);
+  width: 100%;
+  min-width: 220px;
+  /* position: relative; */
+  border: 1px dashed red;
 }
 .studio-main-text-two {
   font-size: 16px;
@@ -673,6 +682,7 @@ img {
   display: flex;
   /* padding-top: 120px; */
   /* padding-bottom: 60px; */
+  max-width: 396px;
 }
 
 /*  ************************ sect 3  ********************** */
@@ -953,12 +963,7 @@ footer {
   gap: 40px;
   padding: 24px 0;
 }
-/* .list {
-  list-style: none;
-  font-style: normal;
-  display: flex;
-  padding: 24px 0;
-} */
+
 .adr-list {
   font-style: normal;
   margin-left: auto;
@@ -1048,4 +1053,40 @@ footer {
 .footer-bg {
   background-color: var(--foot-color-bckgrnd);
   padding: 100px 0;
+}
+.hide {
+  display: none;
+}
+/* ! ********** ADAPTIVE ********** */
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 428px;
+  }
+  .about-us-list {
+    gap: 24px;
+    /* min-width: 396px; */
+    min-width: 264px;
+  }
+}
+/******* breakpoint №2 ********/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+  .about-item {
+    /* gap: */
+  }
+
+  .about-us-list {
+    gap: 72px;
+    /* min-width: 396px; */
+    max-width: unset;
+    width: calc((100% - 72px) / 2);
+  }
+}
+/******* breakpoint №3 ********/
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
 }
