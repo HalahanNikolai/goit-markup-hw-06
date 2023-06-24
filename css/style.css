@@ -214,7 +214,7 @@ img {
   width: 1440px; */
   display: flex;
   flex-direction: column;
-  padding: 0 316px;
+  /* padding: 0 316px; */
 }
 
 .backdrop {
@@ -638,9 +638,7 @@ img {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  /* text-transform: uppercase; */
   color: #ffffff;
-  /* background-color: #2e2f42; */
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 48px;
@@ -688,6 +686,7 @@ img {
 /*  ************************ sect 3  ********************** */
 .stud-work {
   padding-bottom: 120px;
+  display: none;
 }
 .container-stud-work {
   /* margin-top: 120px;
@@ -713,12 +712,16 @@ img {
 }
 /*  ************************ sect 4 *********************** */
 .nasha-komanda {
-  gap: 24px;
+  /* !!! gap: 24px; */
+  gap: 72px 82px;
+  flex-wrap: wrap;
+  justify-content: CENTER;
 }
 
 .stud-sect-four-bgrnd {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
+  /*!!! width: calc((100% - 72px) / 4); */
+  /* width: calc((100% - 82px * 2) / 1); */
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -732,6 +735,8 @@ img {
 }
 
 .container-stud-team {
+  height: 2232px;
+  max-width: 428px;
 }
 
 .text-names-pipls {
@@ -1057,7 +1062,7 @@ footer {
 .hide {
   display: none;
 }
-/* ! ********** ADAPTIVE ********** */
+/* ! ********************************** ADAPTIVE ******************************* */
 @media screen and (min-width: 428px) {
   .container {
     max-width: 428px;
@@ -1067,13 +1072,29 @@ footer {
     /* min-width: 396px; */
     /* min-width: 264px; */
   }
+  /* ? ************ section 4 **********/
+  .container {
+    max-width: 768px;
+    padding: 0%;
+  }
+  .container-stud-team {
+  }
+  .nasha-komanda {
+    /* !!! gap: 24px; */
+    gap: 64px 24px;
+    flex-wrap: wrap;
+    justify-content: CENTER;
+  }
+
+  .stud-sect-four-bgrnd {
+  }
 }
-/********************************* breakpoint №2 *******************************/
+/* ! ******************************** breakpoint №2 *******************************/
 @media screen and (min-width: 768px) {
   .container {
     /* max-width: 736px; */
-    margin-left: 16px;
-    margin-right: 16px;
+    /* margin-left: 16px; */
+    /* margin-right: 16px; */
   }
   .about-item {
     width: calc((100% - 24px) / 2);
@@ -1095,15 +1116,36 @@ footer {
     margin-left: 16px;
     margin-right: 16px;
     padding: 0%;
-    max-height: 125px;
+    /* max-height: 125px; */
+  }
+  /* ? ************ section 4 **********/
+  .stud-team {
+  }
+  .container {
+    max-width: 768px;
+    padding: 0%;
+  }
+  .container-stud-team {
+    margin: 72px 108px 96px 108px;
+  }
+  .nasha-komanda {
+    /* !!! gap: 24px; */
+    gap: 64px 24px;
+    flex-wrap: wrap;
+    justify-content: CENTER;
+  }
+
+  .stud-sect-four-bgrnd {
   }
 }
-/******************************** breakpoint №3 *****************************/
+/* ! ******************************* breakpoint №3 *****************************/
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 264px;
     /* margin: 120px; */
-    margin: 0;
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-left: 15px;
   }
   .container-sect-two {
   }
@@ -1134,5 +1176,34 @@ footer {
   }
   .about-item {
     width: calc((100% - 72px) / 4);
+  }
+  /* ? ************ section 2 **********/
+
+  /* ? ************ section 3 **********/
+  .stud-work {
+    padding-bottom: 120px;
+    display: initial;
+  }
+  .container-stud-work {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  /* ? ************ section 4 **********/
+  .stud-team {
+    background-color: #f4f4fd;
+    padding: 120px 0;
+  }
+
+  .container-stud-team {
+    margin: 0 auto;
+  }
+  .nasha-komanda {
+    gap: 24px;
+    /* gap: 64px 24px; */
+    flex-wrap: nowrap;
+    justify-content: CENTER;
+  }
+
+  .stud-sect-four-bgrnd {
   }
 }
