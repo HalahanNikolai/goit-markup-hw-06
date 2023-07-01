@@ -16,13 +16,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="js/modal.js">
+    <link rel="stylesheet" href="./css/media.css" />
 
 </head>
 
 <body>
     <!-- ******************************************** HEADER ***************************************************************** -->
     <header class="hdr-container">
-        <div class="container hdr-container-two hide">
+        <div class="container hdr-container-two">
             <nav class="navig-menu">
                 <a class="link logo" href="./index.html" lang="en">Web<span class="logo-part">Studio</span> </a>
 
@@ -45,7 +46,65 @@
                     <li><a href="tel:+110001111111" class="nav-link-stud-hdr link">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <!-- ***icon-burgermenu ***-->
+            <button type="button" class="open-menu-btn" data-menu-open>
+                <svg class="mob-menu-burg-ico" width="32" height="22">
+                    <use href="./images/icons.svg#icon-burgermenu"></use>
+                </svg>
+            </button>
+            <!-- *** menu-mobile *** -->
+            <div class="mob-menu is-hidden" data-menu>
+
+                <button type="button" class="close-menu-btn" data-menu-close>
+                    <svg class="mob-menu-burg-ico" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-mob-menu"></use>
+                    </svg>
+                </button>
+
+                <ul class="mob-menu-list">
+                    <li>
+                        <a href="./index.html" class="mob-menu-link mob-menu-color-txt">Studio</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="mob-menu-link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="" class="mob-menu-link">Contacts</a>
+                    </li>
+                </ul>
+                <!--*-->
+                <div class="mob-box">
+                    <address class="mob-adr">
+                        <ul class="mob-menu-adr-list list">
+                            <li><a href="tel:+110001111111" class="mob-adr-tel link">+11 (000) 111-11-11</a></li>
+                            <li><a href="mailto:info@devstudio.com" class="mob-adr-mail link">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <!--*-->
+                    <ul class="mob-footer-svg">
+                        <li class="mob-social-list"> <a class="footer-icons" href="#"> <svg class="footer-ico"
+                                    width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg></a></li>
+                        <li class="mob-social-list"> <a class="footer-icons" href="#"> <svg class="footer-ico"
+                                    width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg></a></li>
+                        <li class="mob-social-list"> <a class="footer-icons" href="#"> <svg class="footer-ico"
+                                    width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg></a></li>
+                        <li class="mob-social-list"> <a class="footer-icons" href="#"> <svg class="footer-ico"
+                                    width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
+
     </header>
     <!-- *********************************************** MAIN ************************************************************** -->
     <main>
@@ -288,10 +347,10 @@
             </div>
         </section>
         <!--!  section 5 -->
-        <section class="sect-custom hide">
+        <section class="sect-custom">
             <!-- <div class="sect-custom-container"> -->
 
-            <div class="container">
+            <div class="container custom-container">
                 <h2 class="sect-fife-title">Customers</h2>
                 <ul class="custom-list">
                     <li class="custom-list-item">
@@ -341,7 +400,7 @@
         </section>
     </main>
     <!-- ******************************************** FOOTER ***************************************************************** -->
-    <footer class="footer-bg hide">
+    <footer class="footer-bg">
         <div class="container footer-contact-wrap">
             <div class="footer-logo-box">
                 <a class="link logo logo-footer" href="./index.html">Web<span class="logo-part-footer">Studio</span>
@@ -390,7 +449,7 @@
         </div>
     </footer>
 
-    <div class="backdrop is-hidden hide" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-button" data-modal-close>
                 <svg class="modal-button-svg" width="8" height="8">
@@ -455,6 +514,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

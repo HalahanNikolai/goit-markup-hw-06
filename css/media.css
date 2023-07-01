@@ -1,0 +1,407 @@
+/* ! ********************************** ADAPTIVE ******************************* */
+@media screen and (min-width: 428px) {
+  /* ? ************ Header**********/
+  .hdr-container-two {
+    height: 70px;
+  }
+  .navig-menu {
+  }
+  .logo {
+    margin-top: 24px;
+    margin-bottom: 22px;
+    margin-left: 16px;
+  }
+  .heder-list {
+    list-style: none;
+    font-style: normal;
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+    display: none;
+  }
+  .adr-list {
+    font-style: normal;
+    margin-left: auto;
+    /* display: initial; */
+    display: none;
+  }
+  .header-adr-list {
+    /* display: none; */
+  }
+  .container {
+    max-width: 428px;
+    /* width: 100%; */
+    /* max-width: 768px; */
+    /* padding: 0%; */
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+  /* ? ************ Section 1 (picture) **********/
+  .stud_main_sect_stud {
+    height: 432px;
+  }
+  .main-stud-container {
+    margin-top: -77px;
+  }
+  .studio-main-text-one {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+    max-width: 320px;
+    text-align: center;
+    letter-spacing: 0.72px;
+    color: #ffffff;
+    /* justify-content: CENTER; */
+    /* align-items: center; */
+    text-transform: capitalize;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+  /* ? ************ section 2 **********/
+  .about-us {
+    padding: 0px;
+  }
+  .container-sect-two {
+    max-width: 736px;
+    margin: 96px 16px;
+    padding: 0%;
+  }
+  /* ? **********************/
+  .about-item {
+    /* width: calc((100% - 24px) / 2); */
+    /* min-width: 220px; */
+    max-width: 396px;
+    height: 125px;
+  }
+  .about-us-list {
+    gap: 24px;
+    gap: 72px;
+    padding: 0;
+    justify-content: CENTER;
+    /* min-width: 396px; */
+    /* min-width: 264px; */
+    height: 624px;
+  }
+  .about-item {
+    /* width: calc((100% - 24px) / 2); */
+    height: 96px;
+  }
+  /* ? ************ section 4 **********/
+
+  .container-stud-team {
+  }
+  .nasha-komanda {
+    /* !!! gap: 24px; */
+    gap: 64px 24px;
+    flex-wrap: wrap;
+    justify-content: CENTER;
+  }
+
+  .stud-team {
+  }
+  .container-stud-team {
+    padding: 96px 0;
+  }
+  .stud-sect-four-bgrnd {
+  }
+  /* ? ************ section 5 **********/
+  .custom-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 16px;
+    justify-content: center;
+  }
+  /* ? ************ Footer ************/
+  .footer-bg {
+  }
+  .footer-contact-wrap {
+    justify-content: center;
+  }
+  .footer-logo-box {
+  }
+  .social-box {
+  }
+  .footer-svg {
+  }
+  .social-list {
+  }
+  .subscrb-container {
+  }
+  .subscrb-form {
+  }
+  .subscrb-label {
+  }
+  .subscrb-btn {
+  }
+}
+/* ! ******************************** breakpoint №2 *******************************/
+@media screen and (min-width: 768px) {
+  /* ? ************ Header **********/
+  .open-menu-btn {
+    display: none;
+  }
+  .heder-list {
+    list-style: none;
+    font-style: normal;
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+    display: flex;
+  }
+  .adr-list {
+    font-style: normal;
+    margin-left: auto;
+    display: initial;
+    /* display: none; */
+  }
+  .header-adr-list {
+    gap: 12px;
+    margin-right: -3px;
+    flex-direction: column;
+  }
+  .container {
+    /* max-width: 736px; */
+    /* margin-left: 16px; */
+    /* margin-right: 16px; */
+  }
+  /* ? ************ Section 1 (picture) **********/
+  .stud_main_sect_stud {
+    height: 436px;
+  }
+  .main-stud-container {
+    /* margin-top: -77px; */
+  }
+  .studio-main-text-one {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
+    max-width: 496px;
+  }
+
+  /* ? **********************/
+  .about-item {
+    width: calc((100% - 24px) / 2);
+    height: 125px;
+  }
+
+  .about-us-list {
+    gap: 67px 24px;
+    /* width: calc((100% - 24px) / 2); */
+    height: 312px;
+  }
+  .about-us {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-sect-two {
+    max-width: 736px;
+    margin: 96px 16px;
+    padding: 0%;
+    /* max-height: 125px; */
+  }
+  /* ? ************ section 4 **********/
+  .stud-team {
+    height: 1224px;
+  }
+  .container {
+    max-width: 768px;
+    padding: 0%;
+  }
+  .container-stud-team {
+    height: 1224px;
+    /* margin: 96px 0px; */
+  }
+  .nasha-komanda {
+    /* !!! gap: 24px; */
+    gap: 64px 24px;
+    flex-wrap: wrap;
+    justify-content: CENTER;
+  }
+
+  .stud-sect-four-bgrnd {
+  }
+  /* ? ************ section 5 **********/
+  .sect-custom {
+    /* padding-top: 120px; */
+    /* padding-bottom: 120px; */
+    /* height: 360px; */
+    /* margin: 96px 108px; */
+    padding: 96px 0;
+  }
+  .custom-list {
+    /* flex-basis: calc((100% - 48px) / 3); */
+  }
+  .custom-list-item {
+    /* flex-basis: calc((100% - 48px) / 3); */
+    width: calc((100% - 48px) / 3);
+  }
+  /* ? ************ Footer ************/
+  .footer-bg {
+  }
+  .footer-contact-wrap {
+    justify-content: unset;
+  }
+  .footer-logo-box {
+    margin-bottom: 0;
+  }
+  .social-box {
+  }
+  .footer-svg {
+  }
+  .social-list {
+  }
+  .subscrb-container {
+  }
+  .subscrb-form {
+  }
+  .subscrb-label {
+  }
+  .subscrb-btn {
+  }
+}
+/* ! ******************************* breakpoint №3 *****************************/
+@media screen and (min-width: 1158px) {
+  /* ? ************ Header **********/
+  /* .heder-list {
+    list-style: none;
+    font-style: normal;
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+    display: flex;
+  } */
+  .header-adr-list {
+    gap: 40px;
+    margin-right: -3px;
+    flex-direction: row;
+  }
+  .container {
+    /* margin: 120px; */
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-left: 15px;
+  }
+  /* ? ************ section 2 **********/
+  .stud_main_sect_stud {
+    height: 600px;
+  }
+  .main-stud-container {
+    /* margin-top: -77px; */
+  }
+
+  .container-sect-two {
+  }
+  .svg-sect-two {
+    /* display: unset; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    background: #f4f4fd;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+  }
+  .svg-sect-two-two {
+    margin: 0 auto;
+  }
+  .studio-main-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--notmain-color);
+    margin-bottom: 8px;
+  }
+  .about-us {
+    justify-content: unset;
+  }
+  .about-us-list {
+    display: flex;
+    flex-wrap: nowrap;
+    /* margin: 0 156px; */
+    gap: 24px;
+    padding: 0;
+    /* width: calc((100% - 24px * 3) / 4); */
+  }
+  .about-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  /* ? ************ section 3 **********/
+  .stud-work {
+    padding-bottom: 120px;
+    display: initial;
+  }
+  .container-stud-work {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  /* ? ************ section 4 **********/
+  .stud-team {
+    background-color: #f4f4fd;
+    padding: 120px 0;
+    height: 780px;
+  }
+
+  .container-stud-team {
+    margin: 0 auto;
+  }
+  .nasha-komanda {
+    gap: 24px;
+    /* gap: 64px 24px; */
+    flex-wrap: nowrap;
+    justify-content: CENTER;
+  }
+
+  .stud-sect-four-bgrnd {
+  }
+  /* ? ************ section 5 **********/
+  .sect-custom {
+    padding: 120px 0;
+  }
+  .custom-container {
+  }
+  .custom-list-item {
+    display: inline-block;
+    height: 88px;
+    width: calc((100% - 120px) / 6);
+  }
+  /* ? ************ Footer ************/
+  .footer-bg {
+  }
+  .footer-contact-wrap {
+    flex-wrap: nowrap;
+  }
+  .footer-logo-box {
+    margin-right: 120px;
+  }
+  .social-box {
+  }
+  .footer-svg {
+  }
+  .social-list {
+  }
+  .subscrb-container {
+  }
+  .subscrb-form {
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  .subscrb-label {
+  }
+  .subscrb-btn {
+  }
+}
