@@ -40,7 +40,13 @@
   }
   /* ? ************ Section 1 (picture) **********/
   .stud_main_sect_stud {
-    height: 432px;
+    /* height: 432px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Mob_Title.jpg); */
   }
   .main-stud-container {
     margin-top: -77px;
@@ -121,6 +127,19 @@
   }
   .footer-logo-box {
   }
+  .logo {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #4d5ae5;
+    text-transform: uppercase;
+    /* margin-right: 76px; */
+    /* display: inline-block; */
+  }
+
   .social-box {
   }
   .footer-svg {
@@ -128,6 +147,16 @@
   .social-list {
   }
   .subscrb-container {
+  }
+  .subscrb-title {
+    margin-top: 72px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;
   }
   .subscrb-form {
   }
@@ -169,6 +198,31 @@
   /* ? ************ Section 1 (picture) **********/
   .stud_main_sect_stud {
     height: 436px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Tablet_Title.jpg);
+    max-width: 1440px;
+    /* height: 432px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    background-position: center;
+    padding: 188px 0px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .stud_main_sect_stud {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Tablet_Title_2x.jpg);
+    }
   }
   .main-stud-container {
     /* margin-top: -77px; */
@@ -249,18 +303,44 @@
   .footer-bg {
   }
   .footer-contact-wrap {
-    justify-content: unset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    max-width: 530px;
+    margin-bottom: 0;
+    align-items: baseline;
+    justify-content: flex-start;
   }
   .footer-logo-box {
     margin-bottom: 0;
   }
   .social-box {
   }
+  .social-text {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    text-align: center;
+  }
   .footer-svg {
   }
   .social-list {
   }
   .subscrb-container {
+  }
+  .subscrb-title {
+    margin-top: 72px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: unset;
   }
   .subscrb-form {
   }
@@ -269,17 +349,10 @@
   .subscrb-btn {
   }
 }
+
 /* ! ******************************* breakpoint №3 *****************************/
 @media screen and (min-width: 1158px) {
   /* ? ************ Header **********/
-  /* .heder-list {
-    list-style: none;
-    font-style: normal;
-    display: flex;
-    gap: 40px;
-    padding: 24px 0;
-    display: flex;
-  } */
   .header-adr-list {
     gap: 40px;
     margin-right: -3px;
@@ -295,6 +368,31 @@
   /* ? ************ section 2 **********/
   .stud_main_sect_stud {
     height: 600px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    max-width: 1440px;
+    /* height: 432px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    background-position: center;
+    padding: 188px 0px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .stud_main_sect_stud {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office_Desk_2x.jpg);
+    }
   }
   .main-stud-container {
     /* margin-top: -77px; */
@@ -387,18 +485,56 @@
   .footer-logo-box {
     margin-right: 120px;
   }
+  .logo {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #4d5ae5;
+    text-transform: uppercase;
+    margin-right: 76px;
+    /* display: inline-block; */
+  }
+
+  .logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
   .social-box {
+  }
+  .social-text {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    text-align: unset;
   }
   .footer-svg {
   }
   .social-list {
   }
   .subscrb-container {
+    margin-left: 80px;
+  }
+  .subscrb-title {
+    margin-top: 100px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: unset;
   }
   .subscrb-form {
     display: flex;
     gap: 24px;
     flex-wrap: nowrap;
+    justify-content: unset;
   }
   .subscrb-label {
   }

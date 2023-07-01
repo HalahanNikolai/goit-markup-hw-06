@@ -124,7 +124,7 @@ img {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
-  margin-right: 76px;
+  /* margin-right: 76px; */
   /* display: inline-block; */
 }
 
@@ -133,8 +133,9 @@ img {
 }
 
 .logo-footer {
-  display: inline-block;
-  margin-bottom: 16px;
+  display: block;
+  text-align: center;
+  margin-bottom: 17.5px;
 }
 .nav-link {
   text-decoration: none;
@@ -188,6 +189,7 @@ img {
   width: 100%;
   height: 100%;
   top: 0;
+  left: 0;
   z-index: 5;
   padding: 80px 35px 40px 40px;
   background: #ffffff;
@@ -310,6 +312,7 @@ img {
   display: flex;
   flex-direction: column;
   /* padding: 0 316px; */
+  margin-top: -77px;
 }
 
 .backdrop {
@@ -587,21 +590,24 @@ img {
 }
 /* ! subscrb */
 .subscrb-container {
-  margin-left: 80px;
+  /* margin-left: 80px; */
   /* margin-top: 100px; */
 }
 .subscrb-title {
+  margin-top: 72px;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  text-align: center;
 }
 .subscrb-form {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .subscrb-label {
   gap: 24px;
@@ -713,13 +719,26 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/Mob_Title.jpg);
   max-width: 1440px;
+  height: 432px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   background-position: center;
   padding: 188px 0px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .stud_main_sect_stud {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Mob_Title_2x.jpg);
+  }
 }
 
 .about-us-list {
@@ -732,15 +751,18 @@ img {
 }
 .studio-main-text-one {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  max-width: 320px;
   text-align: center;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.72px;
   color: #ffffff;
-  /* margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 48px; */
-  max-width: 496px;
+  /* justify-content: CENTER; */
+  /* align-items: center; */
+  text-transform: capitalize;
+  margin: 0 auto;
+  margin-bottom: 72px;
+  /* max-width: 496px; */
 }
 .studio-main-subtitle {
   /* font-weight: 500;
@@ -1034,6 +1056,7 @@ footer {
   font-size: 16px;
   color: #ffffff;
   margin-bottom: 16px;
+  text-align: center;
 }
 .footer-svg {
   display: flex;
