@@ -100,7 +100,7 @@ img {
 .hdr-container-two {
   display: flex;
   align-items: center;
-  height: 70px;
+  max-height: 70px;
 }
 .container {
   /* max-width: 428px; */
@@ -1133,15 +1133,18 @@ footer {
 
 /*? ****************** MAIN  ******************/
 .prtf-section-container {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  /* padding-top: 96px;
+  padding-bottom: 120px; */
+  padding: 48px 149px 48px 16px;
 }
 
 .buttons-filtres {
   display: flex;
-  justify-content: center;
-  gap: 22px;
+  /* justify-content: center; */
+  justify-content: start;
+  gap: 24px;
   margin-bottom: 72px;
+  flex-wrap: wrap;
 }
 .section-btn {
   background-color: var(--main-light-color);

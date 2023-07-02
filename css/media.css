@@ -2,7 +2,6 @@
 @media screen and (min-width: 428px) {
   /* ? ************ Header**********/
   .hdr-container-two {
-    height: 70px;
   }
   .navig-menu {
   }
@@ -52,18 +51,18 @@
     margin-top: -77px;
   }
   .studio-main-text-one {
-    font-weight: 700;
+    /* font-weight: 700;
     font-size: 36px;
     line-height: calc(40 / 36);
     max-width: 320px;
     text-align: center;
     letter-spacing: 0.72px;
-    color: #ffffff;
+    color: #ffffff; */
     /* justify-content: CENTER; */
     /* align-items: center; */
-    text-transform: capitalize;
+    /* text-transform: capitalize;
     margin: 0 auto;
-    margin-bottom: 72px;
+    margin-bottom: 72px; */
   }
   /* ? ************ section 2 **********/
   .about-us {
@@ -164,6 +163,8 @@
   }
   .subscrb-btn {
   }
+  /* ? ***********************************/
+  /* ? ************ Portdolio ************/
 }
 /* ! ******************************** breakpoint №2 *******************************/
 @media screen and (min-width: 768px) {
@@ -228,7 +229,7 @@
     /* margin-top: -77px; */
   }
   .studio-main-text-one {
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -236,23 +237,24 @@
     color: #ffffff;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 48px;
+    margin-bottom: 37px;
     max-width: 496px;
+    text-transform: unset;
   }
 
   /* ? **********************/
   .about-item {
     width: calc((100% - 24px) / 2);
-    height: 125px;
+    max-height: 120px;
   }
 
   .about-us-list {
-    gap: 67px 24px;
+    gap: 72px 24px;
     /* width: calc((100% - 24px) / 2); */
     height: 312px;
   }
   .about-us {
-    padding: 20px 0;
+    /* padding: 20px 0; */
     display: flex;
     justify-content: center;
   }
@@ -263,9 +265,20 @@
     padding: 0%;
     /* max-height: 125px; */
   }
+  .studio-main-subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: 0.72px;
+    /* color: var(--notmain-color); */
+    /* margin-bottom: 8px; */
+    text-align: left;
+    text-transform: capitalize;
+  }
   /* ? ************ section 4 **********/
   .stud-team {
     height: 1224px;
+    padding: 96px 0;
   }
   .container {
     max-width: 768px;
@@ -293,14 +306,23 @@
     padding: 96px 0;
   }
   .custom-list {
+    margin-left: 108px;
+    margin-right: 108px;
+    gap: 72px 24px;
     /* flex-basis: calc((100% - 48px) / 3); */
   }
   .custom-list-item {
+    display: inline-block;
+    max-width: 168px;
+    max-height: 88px;
+
     /* flex-basis: calc((100% - 48px) / 3); */
-    width: calc((100% - 48px) / 3);
+    /* width: calc((100% - 48px) / 3); */
   }
   /* ? ************ Footer ************/
   .footer-bg {
+    padding: 96px 0;
+    max-height: 456px;
   }
   .footer-contact-wrap {
     display: flex;
@@ -311,9 +333,19 @@
     margin-bottom: 0;
     align-items: baseline;
     justify-content: flex-start;
+    /* margin-left: 113px; */
+    margin-top: -29px;
   }
   .footer-logo-box {
     margin-bottom: 0;
+  }
+  .logo {
+    margin-left: 0%;
+  }
+  .logo-footer {
+    display: block;
+    text-align: left;
+    /* margin-bottom: 17.5px; */
   }
   .social-box {
   }
@@ -324,7 +356,7 @@
     font-size: 16px;
     color: #ffffff;
     margin-bottom: 16px;
-    text-align: center;
+    text-align: left;
   }
   .footer-svg {
   }
@@ -333,7 +365,7 @@
   .subscrb-container {
   }
   .subscrb-title {
-    margin-top: 72px;
+    margin-top: 0;
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
@@ -348,6 +380,8 @@
   }
   .subscrb-btn {
   }
+  /* ? ***********************************/
+  /* ? ************ Portdolio ************/
 }
 
 /* ! ******************************* breakpoint №3 *****************************/
@@ -399,6 +433,11 @@
   }
 
   .container-sect-two {
+    /* margin: 120px auto; */
+    max-height: 264px;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .svg-sect-two {
     /* display: unset; */
@@ -419,11 +458,13 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--notmain-color);
-    margin-bottom: 8px;
+    /* color: var(--notmain-color); */
+    /* margin-bottom: 8px; */
+    text-align: left;
   }
   .about-us {
     justify-content: unset;
+    max-height: 344px;
   }
   .about-us-list {
     display: flex;
@@ -471,6 +512,9 @@
   }
   .custom-container {
   }
+  .custom-list {
+    gap: 24px;
+  }
   .custom-list-item {
     display: inline-block;
     height: 88px;
@@ -478,9 +522,11 @@
   }
   /* ? ************ Footer ************/
   .footer-bg {
+    padding-top: 28px;
   }
   .footer-contact-wrap {
     flex-wrap: nowrap;
+    gap: unset;
   }
   .footer-logo-box {
     margin-right: 120px;
@@ -495,6 +541,7 @@
     color: #4d5ae5;
     text-transform: uppercase;
     margin-right: 76px;
+    margin-left: 0px;
     /* display: inline-block; */
   }
 
@@ -521,7 +568,7 @@
     margin-left: 80px;
   }
   .subscrb-title {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
@@ -539,5 +586,20 @@
   .subscrb-label {
   }
   .subscrb-btn {
+    padding: 8px 16px;
+  }
+  /* ? ***********************************/
+  /* ? ************ Portdolio ************/
+  .buttons-filtres {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 72px;
+    flex-wrap: nowrap;
+  }
+  .prtf-section-container {
+    padding-top: 96px;
+    padding-bottom: 120px;
+    /* padding: 100px 427px 72px 427px; */
   }
 }
